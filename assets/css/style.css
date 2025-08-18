@@ -1,0 +1,49 @@
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+html {
+  scroll-behavior: smooth;
+}
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.gradient-bg {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.accordion-content.active {
+  max-height: 500px;
+  opacity: 1;
+}
+.accordion-btn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hero-bg {
+  background-image: url("https://readdy.ai/api/search-image?query=Professional%20modern%20office%20workspace%20with%20clean%20white%20background%2C%20minimalist%20desk%20setup%20with%20laptop%20and%20modern%20technology%2C%20soft%20natural%20lighting%2C%20contemporary%20business%20environment%2C%20professional%20atmosphere%2C%20clean%20and%20organized%20space%2C%20modern%20interior%20design&width=1920&height=1080&seq=hero1&orientation=landscape");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}

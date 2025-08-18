@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+</head>
+
+<body>
+  <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-['Pacifico'] text-primary">Muhammed Nafih</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300 font-medium">About</a>
+          <a href="#projects"
+            class="text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Projects</a>
+          <a href="#contact"
+            class="text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="w-8 h-8 flex items-center justify-center">
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+      <div class="px-4 py-2 space-y-2">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+        <a href="#projects"
+          class="block py-2 text-gray-700 hover:text-primary transition-colors duration-300">Projects</a>
+        <a href="#contact"
+          class="block py-2 text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="min-h-screen flex items-center pt-16" style="
+        background-image: url('assets/images/herobg.jpg');
+        background-size: cover;
+        background-position: center;
+      ">
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-left">
+          <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Hi, I'm
+            <span class="gradient-bg bg-clip-text text-transparent">Muhammed Nafih</span>
+          </h1>
+          <p class="text-xl lg:text-2xl text-gray-600 mb-8">
+            Mern Stack Developer &amp; UI/UX Designer
+          </p>
+          <p class="text-lg text-gray-500 mb-10 max-w-lg">
+            I create beautiful, responsive web applications with modern
+            technologies. Passionate about clean code and exceptional user
+            experiences.
+          </p>
+          <a href="#projects"
+            class="gradient-bg text-white px-8 py-4 !rounded-button text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
+            View My Works
+        </a>
+        </div>
+        <div class="flex-1 flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="w-80 h-80 rounded-full gradient-bg p-2 floating-animation">
+              <img src="assets/images/profile-img.jpeg" alt="Muhammed Nafih"
+                class="w-full h-full rounded-full object-cover object-top" />
+            </div>
+            <div
+              class="absolute -z-10 top-4 left-4 w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-50 mb-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          About Me
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Passionate Mern-Stack Developer with expertise in modern web
+          technologies and a keen eye for design
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <img src="assets/images/about-img.webp" alt="Professional Portrait"
+            class="w-full h-96 object-cover object-top rounded-2xl shadow-xl" />
+        </div>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Hello, I'm Muhammed Nafih Kh
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              A passionate Mern-Stack Developer with over 1 years of
+              experience creating innovative digital solutions. I specialize
+              in modern web technologies and have a strong background in both
+              frontend and backend development. My mission is to build
+              applications that not only function flawlessly but also provide
+              exceptional user experiences.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+              <button
+                class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-200 group"
+                data-target="education">
+                <span class="font-semibold text-gray-900 flex items-center whitespace-nowrap overflow-hidden">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-200">
+                    <i class="ri-graduation-cap-line text-primary"></i>
+                  </div>
+                  <span class="truncate">Education</span>
+                </span>
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-arrow-down-s-line accordion-arrow transition-transform duration-200"></i>
+                </div>
+              </button>
+              <div id="education" class="accordion-content px-6 pb-4">
+                <div class="space-y-3 text-gray-600">
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Computer Science
+                    </h4>
+                    <p>Plus Two • 2023-2025</p>
+                    <p class="text-sm">
+                      Specialized in Computer Science and Problem Solving
+                      Interaction
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">SSLC</h4>
+                    <p>MES HSS MANNARKAD, SSLC • 2020-2023</p>
+                    <p class="text-sm">Completed SSLC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div
+                class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
+                <button
+                  class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  data-target="certifications"
+                >
+                  <span
+                    class="font-semibold text-gray-900 flex items-center whitespace-nowrap"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center mr-3">
+                      <i class="ri-award-line text-primary"></i>
+                    </div>
+                    Certifications
+                  </span>
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i
+                      class="ri-arrow-down-s-line accordion-arrow transition-transform duration-200"
+                    ></i>
+                  </div>
+                </button>
+                <div id="certifications" class="accordion-content px-6 pb-4">
+                  <div class="space-y-3 text-gray-600">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        AWS Certified Solutions Architect
+                      </h4>
+                      <p>Amazon Web Services • 2023</p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        Google Cloud Professional Developer
+                      </h4>
+                      <p>Google Cloud Platform • 2022</p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        Certified Kubernetes Administrator
+                      </h4>
+                      <p>Cloud Native Computing Foundation • 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+              <button
+                class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                data-target="skills">
+                <span class="font-semibold text-gray-900 flex items-center whitespace-nowrap">
+                  <div class="w-6 h-6 flex items-center justify-center mr-3">
+                    <i class="ri-code-line text-primary"></i>
+                  </div>
+                  Technical Skills
+                </span>
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-arrow-down-s-line accordion-arrow transition-transform duration-200"></i>
+                </div>
+              </button>
+              <div id="skills" class="accordion-content px-6 pb-4">
+                <div class="space-y-4 text-gray-600">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">
+                      Frontend Development
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Html</span>
+                      <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Css</span>
+                      <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                      <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">
+                      Backend Development
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm">Node.js</span>
+                      <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">
+                      DevOps & Tools
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm">Git</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div
+                class="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm"
+              >
+                <button
+                  class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  data-target="experience"
+                >
+                  <span
+                    class="font-semibold text-gray-900 flex items-center whitespace-nowrap"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center mr-3">
+                      <i class="ri-briefcase-line text-primary"></i>
+                    </div>
+                    Work Experience
+                  </span>
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i
+                      class="ri-arrow-down-s-line accordion-arrow transition-transform duration-200"
+                    ></i>
+                  </div>
+                </button>
+                <div id="experience" class="accordion-content px-6 pb-4">
+                  <div class="space-y-4 text-gray-600">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        Senior Mern Stack Developer
+                      </h4>
+                      <p class="text-primary font-medium">
+                        TechCorp Solutions • 2021 - Present
+                      </p>
+                      <p class="text-sm mt-1">
+                        Leading development of enterprise web applications,
+                        mentoring junior developers, and implementing scalable
+                        cloud solutions.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        Frontend Developer
+                      </h4>
+                      <p class="text-primary font-medium">
+                        Digital Innovations Inc • 2019 - 2021
+                      </p>
+                      <p class="text-sm mt-1">
+                        Developed responsive web applications using React and
+                        Vue.js, collaborated with UX/UI designers to implement
+                        pixel-perfect designs.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">
+                        Junior Web Developer
+                      </h4>
+                      <p class="text-primary font-medium">
+                        StartupHub • 2018 - 2019
+                      </p>
+                      <p class="text-sm mt-1">
+                        Built and maintained company websites, gained experience
+                        in full-stack development and agile methodologies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Mini Projects
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          A showcase of my recent work and creative solutions
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/cafe-mocha.jpeg" alt="E-commerce Platform"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">CAFE MOCHA</h3>
+            <p class="text-gray-600 mb-4">
+              A static online tea &amp; snaks platform with advanced
+              filtering, showing foods, and real-time food management.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+            </div>
+            <a href="https://nafihkh.github.io/static-website-1/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/steyp-clone.jpeg" alt="Task Management App"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Steyp Clone</h3>
+            <p class="text-gray-600 mb-4">
+              An EdTech company for students to become Skilled engineers &
+              future scientists, an initiative from Talrop.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+            </div>
+            <a href="https://nafihkh.github.io/static-website-3/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/7UP-clone.jpeg" alt="Social Media App"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">7UP Clone</h3>
+            <p class="text-gray-600 mb-4">
+              is an American brand of lemon-lime flavored non-caffeinated soft
+              drink.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+            </div>
+            <a href="https://nafihkh.github.io/static-website-4/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/bootstrapui.jpeg" alt="Analytics Dashboard"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Bootstrap UI</h3>
+            <p class="text-gray-600 mb-4">
+              A bootstrap with Marquee running images and animation effects
+              with interactive UI, real-time data processing, and Accordian.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+            </div>
+            <a href="https://nafihkh.github.io/static-website-4/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/phone-book.jpeg" alt="Learning Platform"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Phone Hub</h3>
+            <p class="text-gray-600 mb-4">
+              An interactive Phone selling platform with Mediaquery, Phone
+              Selling, and repair works elements for enhanced engagement.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+            </div>
+            <a href="https://nafihkh.github.io/responsive-websites-3/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/portfolio.jpeg" alt="Fitness Tracker"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Portfolio</h3>
+            <p class="text-gray-600 mb-4">
+              A Personal portfolio site with interactive design, css
+              animations,contact section with mail sending feture.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Tailwind</span>
+            </div>
+            <a href="#"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/digital clock and stop Watch.jpeg" alt="Analytics Dashboard"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Digital Clock &amp; Stop Watch
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A Digital clock using js for undersatnding about js basics,and
+              24 and 12 hour feture,Stop Watch with stop and reset resume
+              button.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+            </div>
+            <a href="https://nafihkh.github.io/digitalclock-stopwatch/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/quiz-app.jpeg" alt="Learning Platform"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Quiz App</h3>
+            <p class="text-gray-600 mb-4">
+              An interactive Quiz app platform with js, Quiz app, and with ans
+              showing feture.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+            </div>
+            <a href="https://nafihkh.github.io/interactive-Quiz-app/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/todolist.jpeg" alt="Fitness Tracker"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Todo-list</h3>
+            <p class="text-gray-600 mb-4">
+              A Todo-list app with interactive design, using js,with local
+              storage feture.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+            </div>
+            <a href="https://nafihkh.github.io/to-do-list/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/movie-watchlist.jpeg" alt="Analytics Dashboard"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Movie Watchlist
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A using js advanced fetures Api fetching async await, real-time
+              data processing, and whachlist adding feture.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+            </div>
+            <a href="https://nafihkh.github.io/movie-watchlist/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/expwnce-calculator.jpeg" alt="Learning Platform"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Expence Calculator
+            </h3>
+            <p class="text-gray-600 mb-4">
+              An interactive Expence calculator platform with js advanced, to
+              calculate the anual incom, to intaract with charts studey more
+              about charts.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">MongoDB</span>
+            </div>
+            <a href="https://nafihkh.github.io/to-do-list/" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/user-crud.jpeg" alt="Fitness Tracker"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Json User CRUD Api
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A CRUD for studey about node.js,get post methods,the data will
+              stored in users.json file, studey abot fs operations and
+              methods.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+            </div>
+            <a href="https://github.com/nafihkh/json-CRUD-api-for-users" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/static-server.jpeg" alt="Analytics Dashboard"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Simple Static Server
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A simple static server usig node.js to studey about basic
+              routes.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+            </div>
+            <a href="#" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/task-manager-api.jpeg" alt="Learning Platform"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Task Maneger Api
+            </h3>
+            <p class="text-gray-600 mb-4">
+              An interactive task manageing app with node js, json storing
+              system the datas are store in tassks.json.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+            </div>
+            <a href="https://github.com/nafihkh/task-maneger-apt" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/weather-app.jpeg" alt="Fitness Tracker"
+              class="w-full h-full object-cover object-top" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Weather App</h3>
+            <p class="text-gray-600 mb-4">
+              A Weather showing app with node js using open weather api,
+              windspeed temperature ,user frindly.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Html</span>
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Css</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Bootstrap</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Js</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+            </div>
+            <a href="https://github.com/nafihkh/Weather-app" target="_blank"
+              class="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button font-medium whitespace-nowrap transition-colors duration-300 inline-flex items-center">
+              <span>View Project</span>
+              <div class="w-4 h-4 flex items-center justify-center ml-2">
+                <i class="ri-external-link-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Get In Touch
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Ready to start your next project? Let's discuss how we can work
+          together to bring your ideas to life.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+              Send Me a Message
+            </h3>
+            <form id="contact-form" class="space-y-6">
+              <div class="space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your full name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-sm" />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email address"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-sm" />
+                </div>
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this about?"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-sm" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-sm resize-none"></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-primary hover:bg-secondary text-white py-3 px-6 !rounded-button font-semibold whitespace-nowrap transition-colors duration-300 text-lg">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg mr-4 flex-shrink-0">
+                  <i class="ri-mail-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                  <p class="text-gray-600">
+                    muhammednafihkottankodan@gmail.com
+                  </p>
+                  <p class="text-gray-600">contact@muhammednafihkh.dev</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg mr-4 flex-shrink-0">
+                  <i class="ri-phone-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                  <p class="text-gray-600">+91 8921232409</p>
+                  <p class="text-gray-600">Available Mon-Fri, 9AM-6PM PST</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg mr-4 flex-shrink-0">
+                  <i class="ri-map-pin-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
+                  <p class="text-gray-600">India, Kerala,Calicut</p>
+                  <p class="text-gray-600">
+                    Available for remote work worldwide
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Follow Me</h3>
+            <div class="flex space-x-4">
+              <a target="_blank" href="https://www.linkedin.com/in/muhammed-nafih-kh-b22754361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-gray-600 hover:text-white rounded-lg transition-all duration-300">
+                <i class="ri-linkedin-fill ri-lg"></i>
+              </a>
+              <a target="_blank" href="https://github.com/nafihkh"
+                class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-gray-600 hover:text-white rounded-lg transition-all duration-300">
+                <i class="ri-github-fill ri-lg"></i>
+              </a>
+              <a target="_blank" href="https://x.com/nafihkh2007?t=I_8e3TwC9_ictWNGDSW2Rw&s=09"
+                class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-gray-600 hover:text-white rounded-lg transition-all duration-300">
+                <i class="ri-twitter-fill ri-lg"></i>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/__.nafih._?igsh=MW1jaTBrYnNka25peg=="
+                class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-primary text-gray-600 hover:text-white rounded-lg transition-all duration-300">
+                <i class="ri-instagram-fill ri-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center mb-4">
+            <span class="text-2xl font-['Pacifico'] text-primary">Muhammed Nafih</span>
+          </div>
+          <p class="text-gray-400 mb-4 max-w-md">
+            Passionate developer creating innovative digital solutions that
+            make a difference. Let's build something amazing together.
+          </p>
+          <div class="flex space-x-4">
+            <a target="_blank" href="https://www.linkedin.com/in/muhammed-nafih-kh-b22754361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-gray-400 hover:text-white rounded-lg transition-all duration-300">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a target="_blank" href="https://github.com/nafihkh"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-gray-400 hover:text-white rounded-lg transition-all duration-300">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a target="_blank" href="https://x.com/nafihkh2007?t=I_8e3TwC9_ictWNGDSW2Rw&s=09"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-gray-400 hover:text-white rounded-lg transition-all duration-300">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/__.nafih._?igsh=MW1jaTBrYnNka25peg=="
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-gray-400 hover:text-white rounded-lg transition-all duration-300">
+              <i class="ri-instagram-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><span class="text-gray-400">Web Development</span></li>
+            <li><span class="text-gray-400">Mobile Apps</span></li>
+            <li><span class="text-gray-400">UI/UX Design</span></li>
+            <li><span class="text-gray-400">Consulting</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © 2024 Muhammed Nafih Kh. All rights reserved.
+        </p>
+        <button id="back-to-top"
+          class="mt-4 md:mt-0 w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary text-gray-400 hover:text-white rounded-lg transition-all duration-300">
+          <i class="ri-arrow-up-line"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
